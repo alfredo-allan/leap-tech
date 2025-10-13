@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
   title: "Leap Tech",
-  description: "Welcome to my full stack Next.js 14 space portfolio.",
+  description: "Seja Bem Vindo a Leap In Technology",
   keywords: [
     "reactjs",
     "nextjs",
