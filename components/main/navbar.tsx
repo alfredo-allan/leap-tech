@@ -18,14 +18,14 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/logo.png"
+            src="/logo-leap.png"
             alt="Logo"
-            width={70}
-            height={70}
+            width={40}
+            height={40}
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Leap In Tecnology</div>
         </Link>
 
         {/* Web Navbar */}

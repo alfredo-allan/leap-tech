@@ -255,6 +255,7 @@ export const OTHER_SKILL = [
     width: 60,
     height: 60,
   },
+
 ] as const;
 
 export const PROJECTS = [
