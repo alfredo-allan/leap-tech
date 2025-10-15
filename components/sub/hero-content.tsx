@@ -1,9 +1,7 @@
 "use client";
-
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -11,6 +9,17 @@ import {
 } from "@/lib/motion";
 
 export const HeroContent = () => {
+  // Função para scroll suave até o formulário
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-form');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -56,13 +65,14 @@ export const HeroContent = () => {
           tecnologia moderna para elevar sua presença online.
         </motion.p>
 
-        {/* Botão centralizado */}
-        <motion.a
+        {/* Botão centralizado com função de scroll */}
+        <motion.button
           variants={slideInFromLeft(1)}
+          onClick={scrollToContact}
           className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] text-sm sm:text-base mx-auto lg:mx-0"
         >
           Entre Em Contato
-        </motion.a>
+        </motion.button>
       </div>
 
       {/* RIGHT SIDE (Imagem) */}
