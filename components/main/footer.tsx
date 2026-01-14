@@ -1,38 +1,63 @@
-import Link from "next/link";
-
-import { FOOTER_DATA } from "@/constants";
+import Link from 'next/link'
+import { FOOTER_DATA } from '@/constants'
 
 export const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
-      <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
+    <footer className="relative w-full bg-transparent text-gray-300 px-6 pt-16 pb-8">
+      {/* Conteúdo */}
+      <div className="max-w-6xl mx-auto">
+        {/* Grid */}
+        <div
+          className="
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    gap-10
+    mb-12
+    lg:justify-items-center
+  ">
           {FOOTER_DATA.map((column) => (
-            <div
-              key={column.title}
-              className="min-w-[200px] h-auto flex flex-col items-center justify-start"
-            >
-              <h3 className="font-bold text-[16px]">{column.title}</h3>
-              {column.data.map(({ icon: Icon, name, link }) => (
-                <Link
-                  key={`${column.title}-${name}`}
-                  href={link}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="flex flex-row items-center my-[15px]"
-                >
-                  {Icon && <Icon />}
-                  <span className="text-[15px] ml-[6px]">{name}</span>
-                </Link>
-              ))}
+            <div key={column.title} className="space-y-4">
+              {/* Título */}
+              <h3 className="text-white font-semibold text-base">{column.title}</h3>
+
+              {/* Links */}
+              <ul className="space-y-3">
+                {column.data.map(({ icon: Icon, name, link }) => (
+                  <li key={`${column.title}-${name}`}>
+                    <Link
+                      href={link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="
+                        group
+                        flex
+                        items-center
+                        gap-2
+                        text-sm
+                        text-gray-400
+                        hover:text-white
+                        transition-colors
+                      ">
+                      {Icon && <Icon className="w-4 h-4 text-gray-500 group-hover:text-cyan-400 transition-colors" />}
+                      <span>{name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
 
-        <div className="mb-[20px] text-[15px] text-center">
-          &copy; Leap In Technology {new Date().getFullYear()} Inc. All rights reserved.
+        {/* Linha divisória */}
+        <div className="w-full h-px bg-white/10 mb-6" />
+
+        {/* Copyright */}
+        <div className="text-center text-xs sm:text-sm text-gray-400">
+          © Leap In Technology {new Date().getFullYear()} Inc. All rights reserved.
         </div>
       </div>
-    </div>
-  );
-};
+    </footer>
+  )
+}

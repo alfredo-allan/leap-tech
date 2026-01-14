@@ -1,365 +1,362 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { FaYoutube, FaFacebook } from 'react-icons/fa'
+import { RxDiscordLogo, RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from 'react-icons/rx'
 
 export const SKILL_DATA = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: 'HTML',
+    image: 'html.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "CSS",
-    image: "css.png",
+    skill_name: 'CSS',
+    image: 'css.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "JavaScript",
-    image: "js.png",
+    skill_name: 'JavaScript',
+    image: 'js.png',
     width: 65,
-    height: 65,
+    height: 65
   },
   {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
+    skill_name: 'Tailwind CSS',
+    image: 'tailwind.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "React",
-    image: "react.png",
+    skill_name: 'React',
+    image: 'react.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: 'Redux',
+    image: 'redux.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "React Query",
-    image: "reactquery.png",
+    skill_name: 'React Query',
+    image: 'reactquery.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "TypeScript",
-    image: "ts.png",
+    skill_name: 'TypeScript',
+    image: 'ts.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Next.js 14",
-    image: "next.png",
+    skill_name: 'Next.js 14',
+    image: 'next.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Framer Motion",
-    image: "framer.png",
+    skill_name: 'Framer Motion',
+    image: 'framer.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Stripe",
-    image: "stripe.png",
+    skill_name: 'Stripe',
+    image: 'stripe.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: 'Node.js',
+    image: 'node.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
+    skill_name: 'MongoDB',
+    image: 'mongodb.png',
     width: 40,
-    height: 40,
-  },
-] as const;
+    height: 40
+  }
+] as const
 
 export const SOCIALS = [
   {
-    name: "Instagram",
+    name: 'Instagram',
     icon: RxInstagramLogo,
-    link: "https://www.instagram.com/leap_techn0logy/",
+    link: 'https://www.instagram.com/leap_techn0logy/'
   },
   {
-    name: "Facebook",
+    name: 'Facebook',
     icon: FaFacebook,
-    link: "https://facebook.com",
+    link: 'https://facebook.com'
   },
   {
-    name: "Twitter",
+    name: 'Twitter',
     icon: RxTwitterLogo,
-    link: "https://twitter.com",
-  },
-] as const;
+    link: 'https://twitter.com'
+  }
+] as const
 
 export const FRONTEND_SKILL = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: 'HTML',
+    image: 'html.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "CSS",
-    image: "css.png",
+    skill_name: 'CSS',
+    image: 'css.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "JavaScript",
-    image: "js.png",
+    skill_name: 'JavaScript',
+    image: 'js.png',
     width: 65,
-    height: 65,
+    height: 65
   },
   {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
+    skill_name: 'Tailwind CSS',
+    image: 'tailwind.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Material UI",
-    image: "mui.png",
+    skill_name: 'Material UI',
+    image: 'mui.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "React",
-    image: "react.png",
+    skill_name: 'React',
+    image: 'react.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: 'Redux',
+    image: 'redux.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "React Query",
-    image: "reactquery.png",
+    skill_name: 'React Query',
+    image: 'reactquery.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "TypeScript",
-    image: "ts.png",
+    skill_name: 'TypeScript',
+    image: 'ts.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Next.js 14",
-    image: "next.png",
+    skill_name: 'Next.js 14',
+    image: 'next.png',
     width: 80,
-    height: 80,
-  },
-] as const;
+    height: 80
+  }
+] as const
 
 export const BACKEND_SKILL = [
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: 'Node.js',
+    image: 'node.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "Express.js",
-    image: "express.png",
+    skill_name: 'Express.js',
+    image: 'express.png',
     width: 80,
-    height: 80,
+    height: 80
   },
   {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
+    skill_name: 'MongoDB',
+    image: 'mongodb.png',
     width: 40,
-    height: 40,
+    height: 40
   },
   {
-    skill_name: "Firebase",
-    image: "firebase.png",
+    skill_name: 'Firebase',
+    image: 'firebase.png',
     width: 55,
-    height: 55,
+    height: 55
   },
   {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
+    skill_name: 'PostgreSQL',
+    image: 'postgresql.png',
     width: 70,
-    height: 70,
+    height: 70
   },
   {
-    skill_name: "MySQL",
-    image: "mysql.png",
+    skill_name: 'MySQL',
+    image: 'mysql.png',
     width: 70,
-    height: 70,
+    height: 70
   },
   {
-    skill_name: "Prisma",
-    image: "prisma.png",
+    skill_name: 'Prisma',
+    image: 'prisma.png',
     width: 70,
-    height: 70,
+    height: 70
   },
   {
-    skill_name: "Graphql",
-    image: "graphql.png",
+    skill_name: 'Graphql',
+    image: 'graphql.png',
     width: 80,
-    height: 80,
-  },
-] as const;
+    height: 80
+  }
+] as const
 
 export const FULLSTACK_SKILL = [
   {
-    skill_name: "React Native",
-    image: "reactnative.png",
+    skill_name: 'React Native',
+    image: 'reactnative.png',
     width: 70,
-    height: 70,
+    height: 70
   },
   {
-    skill_name: "Tauri",
-    image: "tauri.png",
+    skill_name: 'Tauri',
+    image: 'tauri.png',
     width: 70,
-    height: 70,
+    height: 70
   },
   {
-    skill_name: "Docker",
-    image: "docker.png",
+    skill_name: 'Docker',
+    image: 'docker.png',
     width: 70,
-    height: 70,
+    height: 70
   },
 
   {
-    skill_name: "Figma",
-    image: "figma.png",
+    skill_name: 'Figma',
+    image: 'figma.png',
     width: 50,
-    height: 50,
-  },
-] as const;
+    height: 50
+  }
+] as const
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
+    skill_name: 'Go',
+    image: 'go.png',
     width: 60,
-    height: 60,
-  },
-
-] as const;
+    height: 60
+  }
+] as const
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: 'Modern Next.js 14 Portfolio',
     description:
       'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+    image: '/projects/project-1.png',
+    link: 'https://example.com'
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: 'Interactive Cards Portfolio',
     description:
       'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+    image: '/projects/project-2.png',
+    link: 'https://example.com'
   },
   {
-    title: "Space Themed Website",
+    title: 'Space Themed Website',
     description:
       'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
-  },
-] as const;
+    image: '/projects/project-3.png',
+    link: 'https://example.com'
+  }
+] as const
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: 'Community',
     data: [
       {
-        name: "YouTube",
+        name: 'YouTube',
         icon: FaYoutube,
-        link: "https://youtube.com",
+        link: 'https://youtube.com'
       },
       {
-        name: "GitHub",
+        name: 'GitHub',
         icon: RxGithubLogo,
-        link: "https://github.com",
+        link: 'https://github.com'
       },
       {
-        name: "Discord",
+        name: 'Discord',
         icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
+        link: 'https://discord.com'
+      }
+    ]
   },
   {
-    title: "Social Media",
+    title: 'Social Media',
     data: [
       {
-        name: "Instagram",
+        name: 'Instagram',
         icon: RxInstagramLogo,
-        link: "https://instagram.com",
+        link: 'https://instagram.com'
       },
       {
-        name: "Twitter",
+        name: 'Twitter',
         icon: RxTwitterLogo,
-        link: "https://twitter.com",
+        link: 'https://twitter.com'
       },
       {
-        name: "Linkedin",
+        name: 'Linkedin',
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
+        link: 'https://linkedin.com'
+      }
+    ]
   },
   {
-    title: "About",
+    title: 'About',
     data: [
       {
-        name: "Become Sponsor",
+        name: 'Become Sponsor',
         icon: null,
-        link: "https://youtube.com",
+        link: 'https://youtube.com'
       },
       {
-        name: "Learning about me",
+        name: 'Learning about me',
         icon: null,
-        link: "https://example.com",
+        link: 'https://example.com'
       },
       {
-        name: "Contact Me",
+        name: 'Contact Me',
         icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
-  },
-] as const;
+        link: 'mailto:contact@example.com'
+      }
+    ]
+  }
+] as const
 
 export const NAV_LINKS = [
   {
-    title: "About me",
-    link: "#about-me",
+    title: 'Serviços',
+    link: '#about-me'
   },
   {
-    title: "Skills",
-    link: "#skills",
+    title: 'Habilidades',
+    link: '#skills'
   },
   {
-    title: "Projects",
-    link: "#projects",
+    title: 'Contato',
+    link: '#contato'
   },
-] as const;
+  {
+    title: 'Leap Tech',
+    link: '#leaptech'
+  }
+] as const
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
-};
+  sourceCode: 'https://github.com/sanidhyy/space-portfolio'
+}
