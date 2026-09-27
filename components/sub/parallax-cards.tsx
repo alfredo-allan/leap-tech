@@ -71,7 +71,7 @@ const BrowserFrame = ({ item, interactive, hoverLabel }: { item: ParallaxCardIte
         alt={item.alt}
         fill
         sizes="(min-width: 1280px) 640px, 50vw"
-        className={`object-cover object-top transition-transform duration-700 ${interactive ? 'group-hover/card:scale-[1.03]' : ''}`}
+        className={`object-cover object-left-top origin-top-left scale-[1.03] transition-transform duration-700 ${interactive ? 'group-hover/card:scale-[1.06]' : ''}`}
       />
       {interactive && (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-[#030014]/80 via-[#030014]/30 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">

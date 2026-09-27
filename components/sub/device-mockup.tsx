@@ -20,6 +20,8 @@ export interface DeviceMockupProps {
   autoAnimate?: boolean
   /** Cor da barra de status — use a cor do topo do site para ficar natural */
   screenColor?: string
+  /** Topo do site claro ou escuro — define a cor dos ícones da barra de status */
+  screenTheme?: 'dark' | 'light'
   /** Cor do brilho atrás do aparelho */
   glowColor?: string
   priority?: boolean
@@ -41,6 +43,7 @@ export default function DeviceMockup({
   rotateStrength = 3,
   autoAnimate = false,
   screenColor = '#000',
+  screenTheme = 'dark',
   glowColor = '#8b5cf6',
   priority = false,
   className = ''
@@ -132,18 +135,18 @@ export default function DeviceMockup({
           <div className="relative overflow-hidden rounded-[2.35rem] bg-black aspect-[9/19.5] flex flex-col isolate">
             {/* Barra de status */}
             <div
-              className="relative z-20 h-9 shrink-0 flex items-center justify-between px-6 text-[10px] font-semibold text-white"
+              className={`relative z-20 h-9 shrink-0 flex items-center justify-between px-6 text-[10px] font-semibold ${screenTheme === 'light' ? 'text-zinc-900' : 'text-white'}`}
               style={{ backgroundColor: screenColor }}>
               <span>9:41</span>
               <span className="flex items-center gap-1">
                 <span className="flex items-end gap-[1.5px] h-2.5" aria-hidden>
-                  <i className="w-[2.5px] h-1 bg-white rounded-[1px]" />
-                  <i className="w-[2.5px] h-1.5 bg-white rounded-[1px]" />
-                  <i className="w-[2.5px] h-2 bg-white rounded-[1px]" />
-                  <i className="w-[2.5px] h-2.5 bg-white rounded-[1px]" />
+                  <i className="w-[2.5px] h-1 bg-current rounded-[1px]" />
+                  <i className="w-[2.5px] h-1.5 bg-current rounded-[1px]" />
+                  <i className="w-[2.5px] h-2 bg-current rounded-[1px]" />
+                  <i className="w-[2.5px] h-2.5 bg-current rounded-[1px]" />
                 </span>
-                <span className="ml-1 w-5 h-2.5 rounded-[3px] border border-white/70 p-[1px]" aria-hidden>
-                  <span className="block h-full w-3/4 bg-white rounded-[1px]" />
+                <span className="ml-1 w-5 h-2.5 rounded-[3px] border border-current p-[1px] opacity-80" aria-hidden>
+                  <span className="block h-full w-3/4 bg-current rounded-[1px]" />
                 </span>
               </span>
             </div>
@@ -178,7 +181,7 @@ export default function DeviceMockup({
             />
 
             {/* Home indicator */}
-            <span aria-hidden className="absolute z-30 bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-white/70" />
+            <span aria-hidden className={`absolute z-30 bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full ${screenTheme === 'light' ? 'bg-zinc-900/70' : 'bg-white/70'}`} />
           </div>
         </div>
       </div>

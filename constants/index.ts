@@ -1,5 +1,4 @@
-import { FaFacebook } from 'react-icons/fa'
-import { RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from 'react-icons/rx'
+import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx'
 
 export const SKILL_DATA = [
   {
@@ -84,19 +83,14 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: 'Instagram',
-    icon: RxInstagramLogo,
-    link: 'https://www.instagram.com/leap_techn0logy/'
+    name: 'LinkedIn',
+    icon: RxLinkedinLogo,
+    link: 'https://www.linkedin.com/in/alfredo-allan-teixeira-ba2701149/'
   },
   {
-    name: 'Facebook',
-    icon: FaFacebook,
-    link: 'https://facebook.com'
-  },
-  {
-    name: 'Twitter',
-    icon: RxTwitterLogo,
-    link: 'https://twitter.com'
+    name: 'GitHub',
+    icon: RxGithubLogo,
+    link: 'https://github.com/alfredo-allan'
   }
 ] as const
 
@@ -293,7 +287,7 @@ export const FOOTER_DATA = [
 export const NAV_LINKS = [
   {
     title: 'Serviços',
-    link: '#about-me'
+    link: '#templates'
   },
   {
     title: 'Habilidades',

@@ -42,8 +42,8 @@ export const Navbar = () => {
         {/* Social Icons (Web) */}
         <div className="hidden md:flex flex-row gap-5">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link href={link} target="_blank" rel="noreferrer noopener" key={name}>
-              <Icon className="h-6 w-6 text-white" />
+            <Link href={link} target="_blank" rel="noreferrer noopener" key={name} aria-label={name} title={name}>
+              <Icon className="h-6 w-6 text-white hover:text-[rgb(112,66,248)] transition" />
             </Link>
           ))}
         </div>
@@ -81,7 +81,7 @@ export const Navbar = () => {
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mt-6 hidden">
             {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link href={link} target="_blank" rel="noreferrer noopener" key={name}>
+              <Link href={link} target="_blank" rel="noreferrer noopener" key={name} aria-label={name} title={name}>
                 <Icon className="h-8 w-8 text-white" />
               </Link>
             ))}
