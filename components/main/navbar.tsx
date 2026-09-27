@@ -68,18 +68,18 @@ export const Navbar = () => {
                 {link.title}
               </Link>
             ))}
-            <Link
+            {/* <Link
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}>
               Source Code
-            </Link>
+            </Link> */}
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-6 mt-6">
+          <div className="flex justify-center gap-6 mt-6 hidden">
             {SOCIALS.map(({ link, name, icon: Icon }) => (
               <Link href={link} target="_blank" rel="noreferrer noopener" key={name}>
                 <Icon className="h-8 w-8 text-white" />

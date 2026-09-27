@@ -88,3 +88,46 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Carrossel de serviços (mobile): "espiada" que indica que dá para deslizar */
+@keyframes swipe-nudge {
+  0%, 100% { transform: translateX(0); }
+  30% { transform: translateX(-56px); }
+  55% { transform: translateX(0); }
+  72% { transform: translateX(-18px); }
+  86% { transform: translateX(0); }
+}
+
+.animate-swipe-nudge {
+  animation: swipe-nudge 1.6s cubic-bezier(0.45, 0, 0.25, 1) 0.3s 1;
+}
+
+/* Seta do "Deslize para ver mais" */
+@keyframes hint-x {
+  0%, 100% { transform: translateX(0); opacity: 0.6; }
+  50% { transform: translateX(4px); opacity: 1; }
+}
+
+.animate-hint-x {
+  animation: hint-x 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-swipe-nudge,
+  .animate-hint-x {
+    animation: none;
+  }
+}
+
+/* Vitrine de templates: entrada suave ao trocar de template */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up { animation: none; }
+}

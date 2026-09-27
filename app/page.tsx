@@ -4,6 +4,7 @@ import ServicesInteractiveSection from '@/components/main/ServicesInteractiveSec
 import SkillsSticky from '@/components/main/SkillsStickScrollComponent'
 import ContactForm from '@/components/main/ContactForm'
 import InstitutionalLeapSection from '@/components/main/InstitutionalLeapSection'
+import TemplatesShowcase from '@/components/main/TemplatesShowcase'
 export default function Home() {
   return (
     <main className="h-full w-full">
@@ -12,6 +13,7 @@ export default function Home() {
         <Skills />
         <ServicesInteractiveSection />
         <SkillsSticky />
+        <TemplatesShowcase />
         <div id="contato">
           <ContactForm />
         </div>{' '}

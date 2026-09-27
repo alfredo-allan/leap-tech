@@ -1,5 +1,5 @@
-import { FaYoutube, FaFacebook } from 'react-icons/fa'
-import { RxDiscordLogo, RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from 'react-icons/rx'
+import { FaFacebook } from 'react-icons/fa'
+import { RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from 'react-icons/rx'
 
 export const SKILL_DATA = [
   {
@@ -277,64 +277,16 @@ export const PROJECTS = [
 
 export const FOOTER_DATA = [
   {
-    title: 'Community',
-    data: [
-      {
-        name: 'YouTube',
-        icon: FaYoutube,
-        link: 'https://youtube.com'
-      },
-      {
-        name: 'GitHub',
-        icon: RxGithubLogo,
-        link: 'https://github.com'
-      },
-      {
-        name: 'Discord',
-        icon: RxDiscordLogo,
-        link: 'https://discord.com'
-      }
-    ]
+    name: 'LinkedIn',
+    handle: 'Alfredo Allan Teixeira',
+    icon: RxLinkedinLogo,
+    link: 'https://www.linkedin.com/in/alfredo-allan-teixeira-ba2701149/'
   },
   {
-    title: 'Social Media',
-    data: [
-      {
-        name: 'Instagram',
-        icon: RxInstagramLogo,
-        link: 'https://instagram.com'
-      },
-      {
-        name: 'Twitter',
-        icon: RxTwitterLogo,
-        link: 'https://twitter.com'
-      },
-      {
-        name: 'Linkedin',
-        icon: RxLinkedinLogo,
-        link: 'https://linkedin.com'
-      }
-    ]
-  },
-  {
-    title: 'About',
-    data: [
-      {
-        name: 'Become Sponsor',
-        icon: null,
-        link: 'https://youtube.com'
-      },
-      {
-        name: 'Learning about me',
-        icon: null,
-        link: 'https://example.com'
-      },
-      {
-        name: 'Contact Me',
-        icon: null,
-        link: 'mailto:contact@example.com'
-      }
-    ]
+    name: 'GitHub',
+    handle: '@alfredo-allan',
+    icon: RxGithubLogo,
+    link: 'https://github.com/alfredo-allan'
   }
 ] as const
 
