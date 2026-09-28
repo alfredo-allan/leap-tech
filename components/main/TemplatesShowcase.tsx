@@ -122,7 +122,7 @@ const DesktopShowcase = () => {
               <ChevronLeft className="w-4 h-4" />
             </button>
 
-            <div className="flex gap-2 overflow-x-auto scrollbar-hidden py-1 px-0.5">
+            <div className="flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hidden py-1 px-0.5">
               {TEMPLATES.map((t, i) => (
                 <button
                   key={t.id}
@@ -303,7 +303,7 @@ const MobileCarousel = () => {
         role="region"
         aria-roledescription="carrossel"
         aria-label="Templates"
-        className="-mx-4 sm:-mx-6 px-[14vw] overflow-x-auto snap-x snap-mandatory scrollbar-hidden">
+        className="-mx-4 sm:-mx-6 px-[14vw] pb-4 -mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain snap-x snap-mandatory scrollbar-hidden">
         <div
           onAnimationEnd={() => setNudge(false)}
           className={`flex w-max ${nudge && !hasInteracted ? 'animate-swipe-nudge' : ''}`}>

@@ -257,7 +257,7 @@ export default function ServicesSection() {
               role="tablist"
               aria-label="Serviços"
               aria-orientation="horizontal"
-              className="relative -mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto snap-x snap-mandatory scroll-px-4 sm:scroll-px-6 scrollbar-hidden
+              className="relative -mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto overflow-y-hidden overscroll-x-contain snap-x snap-mandatory scroll-px-4 sm:scroll-px-6 scrollbar-hidden
                 lg:mx-0 lg:px-0 lg:overflow-visible lg:snap-none">
               <div
                 onAnimationEnd={() => setNudge(false)}

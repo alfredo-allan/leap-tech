@@ -311,7 +311,7 @@ const SkillsCarousel = () => {
                     role="region"
                     aria-roledescription="carrossel"
                     aria-label="Tecnologias que dominamos"
-                    className="-mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto snap-x snap-mandatory scroll-px-4 sm:scroll-px-6 scrollbar-hidden outline-none">
+                    className="-mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto overflow-y-hidden overscroll-x-contain snap-x snap-mandatory scroll-px-4 sm:scroll-px-6 scrollbar-hidden outline-none">
                     <div
                         onAnimationEnd={() => setNudge(false)}
                         className={`flex gap-3 w-max pb-1 ${nudge && !hasInteracted ? 'animate-swipe-nudge' : ''}`}>
