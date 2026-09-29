@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent, type ReactNode, type TouchEvent } from 'react'
-import { Palette, Target, Figma, Code2, Flag, Paintbrush, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-react'
+import { Palette, Target, Figma, Code2, Flag, Paintbrush, Network, ShieldCheck, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-react'
 import Image from 'next/image'
 
 interface Service {
@@ -92,6 +92,26 @@ const services: Service[] = [
     ),
     avatarSrc: '/avatar/avatar-dev.png',
     avatarAlt: 'Dev Avatar'
+  },
+  {
+    id: 4,
+    icon: <Network className="w-5 h-5" />,
+    title: 'Redes & Segurança',
+    description: 'Redes Cisco e Mikrotik, câmeras (CFTV) e controle de acesso para um ambiente conectado e protegido.',
+    badge: <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-400" />,
+    heading: (
+      <>
+        Sua empresa <G>conectada</G> e <G>protegida</G>
+      </>
+    ),
+    text: (
+      <>
+        Internet que não cai, câmeras que você acompanha pelo celular e portas que só abrem para quem tem permissão. Tudo{' '}
+        <G strong>integrado, estável e monitorado</G>.
+      </>
+    ),
+    avatarSrc: '/avatar/avatar-redes.png',
+    avatarAlt: 'Avatar do especialista em redes e segurança'
   }
 ]
 
@@ -230,7 +250,7 @@ export default function ServicesSection() {
   )
 
   return (
-    <section className="w-full min-h-screen py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="about-me" className="scroll-mt-16 w-full min-h-screen py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-5 sm:gap-8 lg:gap-14 items-start">
           {/* ===== Cards (carrossel no mobile, lista no desktop) ===== */}

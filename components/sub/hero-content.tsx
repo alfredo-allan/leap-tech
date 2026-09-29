@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/lib/motion'
 
-const keywords = ['sites rápidos', 'presença online', 'design que converte']
+const keywords = ['sites rápidos', 'presença online', 'redes estáveis', 'segurança']
 
 export const HeroContent = () => {
   const [index, setIndex] = useState(0)
@@ -56,7 +56,7 @@ export const HeroContent = () => {
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-cyan-500/10 blur-2xl -z-10" />
 
           <span className="text-white font-bold leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-            Criamos soluções digitais focadas em{' '}
+            Criamos soluções em tecnologia focadas em{' '}
             <AnimatePresence mode="wait">
               <motion.span
                 key={keywords[index]}
@@ -77,7 +77,7 @@ export const HeroContent = () => {
 
         {/* Subtexto */}
         <motion.p variants={slideInFromLeft(0.8)} className="text-base sm:text-lg text-gray-400 max-w-[600px] text-center lg:text-left">
-          Experiências digitais objetivas para pequenos negócios que querem mais visibilidade, confiança e conversão.
+          Sites, sistemas, redes corporativas e segurança eletrônica para pequenos negócios que querem mais visibilidade, estabilidade e proteção.
         </motion.p>
 
         {/* CTA */}

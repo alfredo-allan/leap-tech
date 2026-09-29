@@ -9,6 +9,9 @@ import {
     Zap,
     GitBranch,
     Figma,
+    Network,
+    Cctv,
+    ScanFace,
     ChevronLeft,
     ChevronRight,
     ChevronsRight,
@@ -38,6 +41,74 @@ const skills: Skill[] = [
                     <div className="text-cyan-400 mt-4">$ docker ps</div>
                     <div className="text-gray-400">CONTAINER ID   STATUS</div>
                     <div className="text-gray-400">a1b2c3d4e5f6   <span className="text-green-400">Up 45 days</span></div>
+                </div>
+            </div>
+        )
+    },
+    {
+        title: 'Redes Corporativas: Cisco & Mikrotik',
+        description: 'Roteadores e switches Cisco e Mikrotik com VLANs, failover entre links e QoS. Na prática: uma rede estável e rápida, que não cai no meio do expediente.',
+        Icon: Network,
+        gradient: 'from-sky-500 to-indigo-500',
+        content: (
+            <div className="w-full h-full bg-slate-900 p-6 flex flex-col justify-center">
+                <div className="space-y-1.5 font-mono text-xs sm:text-sm">
+                    <div className="text-cyan-400">[admin@MikroTik] &gt; /interface print</div>
+                    <div className="text-gray-400">ether1-wan1 <span className="text-green-400">link up</span></div>
+                    <div className="text-gray-400">ether2-wan2 <span className="text-yellow-400">failover</span></div>
+                    <div className="text-purple-400 mt-3">Switch# show vlan brief</div>
+                    <div className="text-gray-400">10 ADMINISTRATIVO <span className="text-green-400">active</span></div>
+                    <div className="text-gray-400">20 CFTV <span className="text-green-400">active</span></div>
+                    <div className="text-gray-400">30 VISITANTES <span className="text-green-400">active</span></div>
+                </div>
+            </div>
+        )
+    },
+    {
+        title: 'CFTV & Monitoramento IP',
+        description: 'Projeto e instalação de câmeras IP e analógicas com gravação em NVR/DVR, cobertura sem pontos cegos e acesso remoto seguro: você acompanha tudo pelo celular.',
+        Icon: Cctv,
+        gradient: 'from-emerald-500 to-cyan-500',
+        content: (
+            <div className="w-full h-full bg-slate-950 p-3 flex items-center">
+                <div className="grid grid-cols-2 gap-2 w-full">
+                    {['Entrada', 'Recepção', 'Estoque', 'Estacionamento'].map((cam, i) => (
+                        <div
+                            key={cam}
+                            className="relative aspect-video rounded-md overflow-hidden border border-white/10 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900">
+                            <div className="absolute inset-0 opacity-30 bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(255,255,255,0.08)_3px)]" />
+                            <span className="absolute top-1 left-1.5 flex items-center gap-1 text-[9px] font-mono text-white/90">
+                                <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                                CAM 0{i + 1}
+                            </span>
+                            <span className="absolute bottom-1 left-1.5 text-[9px] font-mono text-white/70">{cam}</span>
+                            <span className="absolute bottom-1 right-1.5 text-[8px] font-mono text-emerald-400">REC</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )
+    },
+    {
+        title: 'Controle de Acesso: Facial & Eletroímã',
+        description: 'Reconhecimento facial integrado a fechaduras eletroímã, com cadastro de usuários, horários permitidos e histórico de acessos. Só entra quem tem permissão.',
+        Icon: ScanFace,
+        gradient: 'from-violet-500 to-fuchsia-500',
+        content: (
+            <div className="w-full h-full bg-slate-900 p-5 flex flex-col justify-center gap-3">
+                <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+                        <ScanFace className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                        <div className="text-white text-sm font-semibold">Acesso principal</div>
+                        <div className="text-[11px] text-gray-400">Eletroímã: <span className="text-emerald-400">travado</span></div>
+                    </div>
+                </div>
+                <div className="space-y-1.5 font-mono text-[11px] sm:text-xs">
+                    <div className="flex justify-between text-gray-300"><span>08:02 Colaborador 014</span><span className="text-emerald-400">✔ liberado</span></div>
+                    <div className="flex justify-between text-gray-300"><span>08:15 Colaborador 027</span><span className="text-emerald-400">✔ liberado</span></div>
+                    <div className="flex justify-between text-gray-300"><span>08:31 Não cadastrado</span><span className="text-red-400">✖ negado</span></div>
                 </div>
             </div>
         )
